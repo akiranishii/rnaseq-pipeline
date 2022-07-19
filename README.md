@@ -34,7 +34,7 @@ The RNA-seq pipelien
 
 ### STEP 2: Access the Great Lakes Server to the terminal
 
-1. Type the following into your terminal: ssh [replace with uniqname]@greatlakes.arc-ts.umich.edu
+1. Type the following into your terminal: `ssh [replace with uniqname]@greatlakes.arc-ts.umich.edu`
 2. Use your level 1 account to login.
 3. 
 
