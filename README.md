@@ -29,12 +29,16 @@ The RNA-seq pipelien
 3. It will navigate you to a log in page. Use your level 1 account to access it.
 4. Click files -> home directory.
 5. Click "GO TO" on the top bars, and type the path "/nfs/turbo/umms-macdouga/" into it. Click ok.
-6. Create a directory for yourself. Inside your directory, create a directory called "clean".
-7. Upload all of your raw RNA-seq files (.fastq) into the directory labeled "clean". Make sure each sample has its own directory labeled with the sample name of your choosing.
+6. Create a new directory for yourself. This directory will be referred to as [new directory] in later steps. 
+7. Upload all files from this repository into [new directory].
+8. Create a new directory called "clean" inside [new directory].
+9. Upload all of your raw RNA-seq files (.fastq.gz) into the directory labeled "clean". Make sure each sample has its own directory labeled with sample names of your choosing.
 
 ### STEP 2: Access the Great Lakes Server to the terminal
 
 1. Type the following into your terminal: `ssh [replace with uniqname]@greatlakes.arc-ts.umich.edu`
 2. Use your level 1 account to login.
-3. 
+3. Navigate to your folder of interest by using the "cd" command: `cd /nfs/turbo/umms-macdouga/[new directory]` 
+4. Run the command: `sbatch run_human_rna_seq` or `sbatch run_mouse_rna_seq` (depending on animal model)
+5. To cancel a run, type the command: `scancel [insert Slurm Job ID]`
 
