@@ -16,3 +16,5 @@ Most sequencing data in the MacDougald lab are derived from Illumina and the Bei
 ## RNA-seq pipeline outline
 
 The RNA-seq pipeline conducts three analyses in parallel and 
+
+<img width="823" alt="rnaseq" src="https://user-images.githubusercontent.com/62619033/179835069-b15add0e-0777-460c-a817-dff6d835d4be.png">
