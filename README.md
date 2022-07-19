@@ -14,3 +14,5 @@ Most sequencing data in the MacDougald lab are derived from Illumina and the Bei
 2. Are the reads **paired-end or strand-specific**? If they are strand-specific, is it forward or reversely stranded?
 
 ## RNA-seq pipeline outline
+
+The RNA-seq pipeline conducts three analyses in parallel and 
