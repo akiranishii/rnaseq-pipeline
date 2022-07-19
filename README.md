@@ -34,7 +34,7 @@ The RNA-seq pipelien
 8. Create a new directory called "clean" inside [new directory].
 9. Upload all of your raw RNA-seq files (.fastq.gz) into the directory labeled "clean". Make sure each sample has its own directory labeled with sample names of your choosing.
 
-### STEP 2: Access the Great Lakes Server to the terminal
+### STEP 2: Run RNA-seq analysis through the Great Lakes Server
 
 1. Type the following into your terminal: `ssh [replace with uniqname]@greatlakes.arc-ts.umich.edu`
 2. Use your level 1 account to login.
