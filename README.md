@@ -10,7 +10,7 @@ The RNA-Seq pipeline supports the input of raw next-generation sequencing (NGS) 
 
 Most sequencing data in the MacDougald lab are derived from Illumina and the Beijing Genome Institute (BGI). Before you look at the raw sequences, you should ask yourself the following questions:
 
-What is the **animal model** used (e.g. human, mouse)?
-Are the reads **paired-end or strand-specific**? If they are strand-specific, is it forward or reversely stranded?
+1. What is the **animal model** used (e.g. human, mouse)?
+2. Are the reads **paired-end or strand-specific**? If they are strand-specific, is it forward or reversely stranded?
 
 ## RNA-seq pipeline outline
