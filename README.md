@@ -1,4 +1,4 @@
-# MacLab RNA-Seq Pipeline Walkthrough
+# MacLab End-to-End RNA-Seq Pipeline Walkthrough
 
 ## Introduction
 
