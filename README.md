@@ -53,8 +53,9 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 * Detailed explanation of steps
 * Citations and additional resources
 
-## Links and resources
+## Helpful links and resources
 
+* Fastq file format: https://support.illumina.com/bulletins/2016/04/fastq-files-explained.html
 * Great Lakes Server: https://arc.umich.edu/greatlakes/user-guide/
 * FASTQC: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 * FASTQC interpretation: https://hbctraining.github.io/Intro-to-rnaseq-hpc-salmon/lessons/qc_fastqc_assessment.html
