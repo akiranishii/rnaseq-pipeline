@@ -53,6 +53,11 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 7. Detailed explanation of steps
 8. Citations and additional resources
 
+## Links and resources
+
+* Great Lakes Server
+* FASTQC
+
 ## Contact information
 
 Please contact me at anishii@umich.edu if you experience any issues with using the pipeline. 
