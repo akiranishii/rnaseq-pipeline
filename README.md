@@ -44,19 +44,23 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 
 ### Sections currently being added to the guide
 
-1. Limitations to the pipeline
-2. Sample of descriptions to be used in papers
-3. Past publications that used these tools
-4. Images for visualization of directions
-5. File prep and github usage steps
-6. Last updated
-7. Detailed explanation of steps
-8. Citations and additional resources
+* Limitations to the pipeline
+* Sample of descriptions to be used in papers
+* Past publications that used these tools
+* Images for visualization of directions
+* File prep and github usage steps
+* Last updated
+* Detailed explanation of steps
+* Citations and additional resources
 
 ## Links and resources
 
-* Great Lakes Server
-* FASTQC
+* Great Lakes Server: https://arc.umich.edu/greatlakes/user-guide/
+* FASTQC: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+* FASTQC interpretation: https://hbctraining.github.io/Intro-to-rnaseq-hpc-salmon/lessons/qc_fastqc_assessment.html
+* MultiQC: https://multiqc.info/
+* Cutadapt: https://cutadapt.readthedocs.io/en/stable/#cutadapt
+* 
 
 ## Contact information
 
