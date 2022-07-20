@@ -51,6 +51,7 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 5. File prep and github usage steps
 6. Last updated
 7. Detailed explanation of steps
+8. Citations and additional resources
 
 ## Contact information
 
