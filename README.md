@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The RNA sequencing (RNA-Seq) pipeline processes sequencing data to estimate transcript abundance and identify differentially expressed transcripts across samples. There are various tools that can be used to achieve similar results, though this program will outline the methods commonly used in the MacDougald laboratory. 
+The RNA sequencing (RNA-Seq) pipeline processes sequencing data to estimate transcript abundance and identify differentially expressed transcripts across samples. There are various tools that can be used to achieve similar results, though this program will  make use of tools optimized for use in the MacDougald laboratory at the University of Michigan, Ann Arbor. 
 
 ## Extraction of Raw Sequences
 
@@ -20,7 +20,7 @@ The RNA-seq pipeline conducts three analyses in parallel. The first analysis use
 <img width="823" alt="rnaseq" src="https://user-images.githubusercontent.com/62619033/179835069-b15add0e-0777-460c-a817-dff6d835d4be.png">
 
 ## How to use the RNA-seq pipeline
-The RNA-seq pipelien 
+The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary files from GitHub, (2) Preparing input files for the RNA-seq pipeline, (3) Uploading all files onto the Great Lakes Server, and (4) Running the RNA-seq pipeline on the Great Lakes Server. All steps are outlined below. 
 
 ### STEP 1: Access the Great Lakes Server (https://arc.umich.edu/greatlakes/user-guide/)
 
@@ -41,4 +41,6 @@ The RNA-seq pipelien
 3. Navigate to your folder of interest by using the "cd" command: `cd /nfs/turbo/umms-macdouga/[new directory]` 
 4. Run the command: `sbatch run_human_rna_seq` or `sbatch run_mouse_rna_seq` (depending on animal model)
 5. To cancel a run, type the command: `scancel [insert Slurm Job ID]`
+
+
 
