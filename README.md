@@ -42,5 +42,19 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 4. Run the command: `sbatch run_human_rna_seq` or `sbatch run_mouse_rna_seq` (depending on animal model)
 5. To cancel a run, type the command: `scancel [insert Slurm Job ID]`
 
+### Sections currently being added to the guide
+
+1. Limitations to the pipeline
+2. Sample of descriptions to be used in papers
+3. Past publications that used these tools
+4. Images for visualization of directions
+5. File prep and github usage steps
+6. Last updated
+7. Detailed explanation of steps
+
+## Contact information
+
+Please contact me at anishii@umich.edu if you experience any issues with using the pipeline. 
+
 
 
