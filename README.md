@@ -61,7 +61,11 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 * FASTQC interpretation: https://hbctraining.github.io/Intro-to-rnaseq-hpc-salmon/lessons/qc_fastqc_assessment.html
 * MultiQC: https://multiqc.info/
 * Cutadapt: https://cutadapt.readthedocs.io/en/stable/#cutadapt
-* 
+* STAR: https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf
+* FeatureCounts: https://rnnh.github.io/bioinfo-notebook/docs/featureCounts.html
+* Salmon: https://salmon.readthedocs.io/en/latest/salmon.html
+* DESeq2: [https://bioconductor.org/packages/devel/bioc/manuals/DESeq2/man/DESeq2.pdf](http://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html)
+* Gene set enrichment analysis (GSEA): https://www.gsea-msigdb.org/gsea/index.jsp
 
 ## Contact information
 
