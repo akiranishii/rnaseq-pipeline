@@ -1,4 +1,4 @@
-# MacLab End-to-End RNA-Seq Pipeline Walkthrough
+# MacLab End-to-End RNA-Seq Pipeline Walkthrough (Last updated: 07/23/2022)
 
 ## Introduction
 
@@ -34,7 +34,7 @@ If any of the above procedures/analyses are required, please contact anishii@umi
 ## How to use the RNA-seq pipeline
 The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary files from GitHub, (2) Preparing input files for the RNA-seq pipeline, (3) Uploading all files onto the Great Lakes Server, and (4) Running the RNA-seq pipeline on the Great Lakes Server. All steps are outlined below. 
 
-### STEP 1: Preparation of input files
+### STEP 1: Preparation of input files and download raw sequencing data
 
 ### STEP 2: Access the Great Lakes Server (https://arc.umich.edu/greatlakes/user-guide/)
 
@@ -44,16 +44,18 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 4. Click files -> home directory.
 5. Click "GO TO" on the navigation bar, and type the path "/nfs/turbo/umms-macdouga/" into it. Click ok.
 6. Create a new directory for yourself. This directory will be referred to as [NEW DIRECTORY] in later steps.
-8. Create a directory called "clean" inside [NEW DIRECTORY].
-9. Upload all of your raw RNA-seq files (.fastq.gz) into the directory labeled "clean". Make sure each sample is placed in its own directory.
+7. Create a directory called "clean" inside [NEW DIRECTORY].
+8. Upload all of your raw RNA-seq files (.fastq.gz) into the directory labeled "clean". Make sure each sample is placed in its own directory with a unique sample name that matches the sample name on the .csv file created in STEP 1. 
 
 ### STEP 3: Run RNA-seq analysis through the Great Lakes Server
 
 1. Type the following into your terminal: `ssh [REPLACE WITH UNIQNAME]@greatlakes.arc-ts.umich.edu`
 2. Use your level 1 account to login.
-3. Navigate to your folder of interest by using the "cd" command: `cd /nfs/turbo/umms-macdouga/[NEW DIRECTORY]` 
-4. Run the command: `sbatch run_human_rna_seq` or `sbatch run_mouse_rna_seq` (ensure you choose the correct animal model)
-5. To cancel a run, type the command: `scancel [insert Slurm Job ID]`
+3. Navigate to new directory by typing the command: `cd /nfs/turbo/umms-macdouga/[NEW DIRECTORY]`
+4. Load the git module onto the Great Lakes Server by using the command: `module load git`
+5. Obtain the programs from the RNA-seq pipeline using the command: `git clone 
+6. Run the command: `sbatch run_human_rna_seq` or `sbatch run_mouse_rna_seq` (ensure you choose the correct animal model)
+7. To cancel a run, type the command: `scancel [insert Slurm Job ID]`
 
 ### Sections currently being added to the guide
 
@@ -61,7 +63,6 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 * Past publications that used these tools
 * Images for visualization of directions
 * File prep and github usage steps
-* Last updated
 * Detailed explanation of steps
 
 ## Helpful links and resources
