@@ -54,9 +54,9 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 3. Navigate to new directory by typing the command: `cd /nfs/turbo/umms-macdouga/[NEW DIRECTORY]`
 4. Load the git module onto the Great Lakes Server by using the command: `module load git`
 5. Obtain the necessary programs from the RNA-seq pipeline using the command: `git clone https://github.com/akiranishii/rnaseq-pipeline.git`
-6. Run the following commands in sequence to reorganize the files, as necessary for the pipeline:
-`mv -v rnaseq-pipeline/* .`
-`rm -r rnaseq-pipeline`
+6. Run the following commands in sequence to reorganize the files, as necessary for the pipeline:  
+`mv -v rnaseq-pipeline/* .`  
+`rm -r rnaseq-pipeline`  
 7. Run the analysis by using the command: `sbatch run_human_rna_seq` or `sbatch run_mouse_rna_seq` (ensure you choose the correct animal model)
 8. To cancel a run, type the command: `scancel [insert Slurm Job ID]`
 
