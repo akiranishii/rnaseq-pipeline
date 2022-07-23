@@ -26,7 +26,10 @@ The MacLab RNA-seq pipeline was made with the most common use cases of RNA-seq i
 * The animal model is not human or mouse.
 * The researcher is interested in identifying novel trascripts, rather than just identifying differentially expressed genes. 
 * The researcher requires customizable plots.
-* Adapters and low quality reads were not removed during the sequencing procedure (The UM Bioinformatics Core and BGI automatically conducts these procedures)
+* Adapters and low quality reads were not removed during the sequencing procedure (The UM Bioinformatics Core and BGI automatically conducts these procedures).
+* The researcher is interested in controlling for batch effects or other variables (e.g. sex, age).
+
+If any of the above procedures/analyses are required, please contact anishii@umich.edu with necessary product adjustments. 
 
 ## How to use the RNA-seq pipeline
 The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary files from GitHub, (2) Preparing input files for the RNA-seq pipeline, (3) Uploading all files onto the Great Lakes Server, and (4) Running the RNA-seq pipeline on the Great Lakes Server. All steps are outlined below. 
