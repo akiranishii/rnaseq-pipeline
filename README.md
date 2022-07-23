@@ -1,4 +1,4 @@
-# MacLab End-to-End RNA-Seq Pipeline Walkthrough (Last updated: 07/23/2022)
+# MacLab End-to-End RNA-Seq Pipeline (Last updated: 07/23/2022)
 
 ## Introduction
 
@@ -53,9 +53,10 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 2. Use your level 1 account to login.
 3. Navigate to new directory by typing the command: `cd /nfs/turbo/umms-macdouga/[NEW DIRECTORY]`
 4. Load the git module onto the Great Lakes Server by using the command: `module load git`
-5. Obtain the programs from the RNA-seq pipeline using the command: `git clone 
-6. Run the command: `sbatch run_human_rna_seq` or `sbatch run_mouse_rna_seq` (ensure you choose the correct animal model)
-7. To cancel a run, type the command: `scancel [insert Slurm Job ID]`
+5. Obtain the necessary programs from the RNA-seq pipeline using the command: `git clone https://github.com/akiranishii/rnaseq-pipeline.git`
+6. Run the following commands in sequence to reorganize the files, as necessary for the pipeline: `mv -v rnaseq-pipeline/* .` `rm -r rnaseq-pipeline`
+7. Run the analysis by using the command: `sbatch run_human_rna_seq` or `sbatch run_mouse_rna_seq` (ensure you choose the correct animal model)
+8. To cancel a run, type the command: `scancel [insert Slurm Job ID]`
 
 ### Sections currently being added to the guide
 
@@ -64,6 +65,7 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 * Images for visualization of directions
 * File prep and github usage steps
 * Detailed explanation of steps
+* Description of output files
 
 ## Helpful links and resources
 
