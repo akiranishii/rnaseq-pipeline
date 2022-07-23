@@ -19,32 +19,41 @@ The RNA-seq pipeline conducts three analyses in parallel. The first analysis use
 
 <img width="823" alt="rnaseq" src="https://user-images.githubusercontent.com/62619033/179835069-b15add0e-0777-460c-a817-dff6d835d4be.png">
 
+## Limitations of the RNA-seq pipeline
+
+The MacLab RNA-seq pipeline was made with the most common use cases of RNA-seq in the MacDougald lab in mind. Therefore, the pipeline will not be able to conduct analyses in the following situations:
+
+* The animal model is not human or mouse.
+* The researcher is interested in identifying novel trascripts, rather than just identifying differentially expressed genes. 
+* The researcher requires customizable plots.
+* Adapters and low quality reads were not removed during the sequencing procedure (The UM Bioinformatics Core and BGI automatically conducts these procedures)
+
 ## How to use the RNA-seq pipeline
 The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary files from GitHub, (2) Preparing input files for the RNA-seq pipeline, (3) Uploading all files onto the Great Lakes Server, and (4) Running the RNA-seq pipeline on the Great Lakes Server. All steps are outlined below. 
 
-### STEP 1: Access the Great Lakes Server (https://arc.umich.edu/greatlakes/user-guide/)
+### STEP 1: Preparation of input files
 
-1. Install the Cisco VPN client (https://its.umich.edu/enterprise/wifi-networks/vpn) and login using your level 1 password. You may need to fill out a form on the Great Lakes Server website to create an account if you do not have one already.
+### STEP 2: Access the Great Lakes Server (https://arc.umich.edu/greatlakes/user-guide/)
+
+1. Install the Cisco VPN client (https://its.umich.edu/enterprise/wifi-networks/vpn) and login using your level 1 password. You may need to fill out a form on the Great Lakes Server website to create an account if you do not have one already (https://arc.umich.edu/greatlakes/user-guide/).
 2. Search “http://ssh uniqname@greatlakes.arc-ts.umich.edu" in the browser.
 3. It will navigate you to a log in page. Use your level 1 account to access it.
 4. Click files -> home directory.
-5. Click "GO TO" on the top bars, and type the path "/nfs/turbo/umms-macdouga/" into it. Click ok.
-6. Create a new directory for yourself. This directory will be referred to as [new directory] in later steps. 
-7. Upload all files from this repository into [new directory].
-8. Create a new directory called "clean" inside [new directory].
-9. Upload all of your raw RNA-seq files (.fastq.gz) into the directory labeled "clean". Make sure each sample has its own directory labeled with sample names of your choosing.
+5. Click "GO TO" on the navigation bar, and type the path "/nfs/turbo/umms-macdouga/" into it. Click ok.
+6. Create a new directory for yourself. This directory will be referred to as [NEW DIRECTORY] in later steps.
+8. Create a directory called "clean" inside [NEW DIRECTORY].
+9. Upload all of your raw RNA-seq files (.fastq.gz) into the directory labeled "clean". Make sure each sample is placed in its own directory.
 
-### STEP 2: Run RNA-seq analysis through the Great Lakes Server
+### STEP 3: Run RNA-seq analysis through the Great Lakes Server
 
-1. Type the following into your terminal: `ssh [replace with uniqname]@greatlakes.arc-ts.umich.edu`
+1. Type the following into your terminal: `ssh [REPLACE WITH UNIQNAME]@greatlakes.arc-ts.umich.edu`
 2. Use your level 1 account to login.
-3. Navigate to your folder of interest by using the "cd" command: `cd /nfs/turbo/umms-macdouga/[new directory]` 
-4. Run the command: `sbatch run_human_rna_seq` or `sbatch run_mouse_rna_seq` (depending on animal model)
+3. Navigate to your folder of interest by using the "cd" command: `cd /nfs/turbo/umms-macdouga/[NEW DIRECTORY]` 
+4. Run the command: `sbatch run_human_rna_seq` or `sbatch run_mouse_rna_seq` (ensure you choose the correct animal model)
 5. To cancel a run, type the command: `scancel [insert Slurm Job ID]`
 
 ### Sections currently being added to the guide
 
-* Limitations to the pipeline
 * Sample of descriptions to be used in papers
 * Past publications that used these tools
 * Images for visualization of directions
