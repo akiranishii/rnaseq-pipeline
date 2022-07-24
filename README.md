@@ -88,6 +88,13 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 
 ## Output files
 
+## Post-Pipeline File Cleanup
+
+The Great Lakes Server is NOT meant for long-term storage of data files. Therefore, please transfer all files to an external hard drive or other data storage location. Once all files are safely stored at an external location, the files can be removed by using the following commands in sequence:
+
+`cd /nfs/turbo/umms-macdouga/`
+`rm -r [NEW DIRECTORY]`
+
 ## Past Publications that use the tools in the RNA-seq pipeline
 
 * https://pubmed.ncbi.nlm.nih.gov/34774798/
