@@ -57,6 +57,8 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 3. Response to prompts (BGI should provide you with this information) after using the command: `aws configure` 
 4. Download files of interest into the current directory by using the command: `aws s3 sync s3://[REPLACE WITH BUCKET NAME] .`
 
+*NOTE: If you use this option, please make sure the files and folders are labeled and organized correctly, as described in STEP 1.*
+
 ### STEP 2: Access the Great Lakes Server via the browser
 
 1. Install the Cisco VPN client (https://its.umich.edu/enterprise/wifi-networks/vpn) and login using your level 1 password.
@@ -65,9 +67,9 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 4. Click files -> home directory.
 5. Click "GO TO" on the navigation bar, and type the path "/nfs/turbo/umms-macdouga/" into it. Click ok.
 6. Create a new directory for yourself. This directory will be referred to as [NEW DIRECTORY] in later steps.
-7. Upload the directory labeled "clean" from STEP 1 inside [NEW DIRECTORY].
+7. Upload the directory labeled "clean" and the file labeled "samples.csv" from STEP 1 into [NEW DIRECTORY].
 
-*NOTE: If you have difficulty with any of the steps above, you may need to fill out a form on the Great Lakes Server website to create an account (https://arc.umich.edu/greatlakes/user-guide/).* 
+*NOTE: If you have difficulty with obtaining permissions for any of the steps above, you may need to fill out a form on the Great Lakes Server website to create an account (https://arc.umich.edu/greatlakes/user-guide/).* 
 
 ### STEP 3: Access the Great Lakes Server via the terminal
 
@@ -76,7 +78,7 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 3. Navigate to new directory by typing the command: `cd /nfs/turbo/umms-macdouga/[NEW DIRECTORY]`
 4. Load the git module onto the Great Lakes Server by using the command: `module load git`
 5. Obtain the necessary programs from the RNA-seq pipeline using the command: `git clone https://github.com/akiranishii/rnaseq-pipeline.git`
-6. Run the following commands in sequence to reorganize the files, as necessary for the pipeline:  
+6. Run the following commands in sequence to reorganize the files for the pipeline:  
 `mv -v rnaseq-pipeline/* .`  
 `rm -r rnaseq-pipeline`  
 7. Run the analysis by using the command: `sbatch run_human_rna_seq.sh` or `sbatch run_mouse_rna_seq.sh` (ensure you choose the correct animal model)
@@ -84,14 +86,13 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 
 *NOTE: By default, email notifications about when the run STARTED, ENDED, and FAILED will be sent to rnaseq.log@gmail.com (password: A.kphqXPzEux-c2CYnoxtt_k). This can be changed in the run_human_rna_seq.sh and run_mouse_rna_seq.sh documents.*
 
-### Sections currently being added to the guide
+## Output files
 
-* Sample of descriptions to be used in papers
-* Past publications that used these tools
-* Images for visualization of directions
-* File prep and github usage steps
-* Detailed explanation of steps
-* Description of output files/how to access
+## Past Publications that use the tools in the RNA-seq pipeline
+
+* https://pubmed.ncbi.nlm.nih.gov/34774798/
+* https://pubmed.ncbi.nlm.nih.gov/33979328/
+* https://pubmed.ncbi.nlm.nih.gov/32919095/
 
 ## Helpful links and resources
 
