@@ -47,7 +47,7 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 2. Download the raw sequencing data (.fastq.gz format). Place all of your raw RNA-seq files (.fastq.gz) into the directory labeled "clean". Make sure each sample is placed in its own directory with a unique sample name that matches the sample name on the samples.csv file created in step 1 (this is the default file organization when sequencing data is received from BGI). PLEASE MAKE SURE YOUR FILES ARE BACKED UP IN AN EXTERNAL HARD DRIVE OR OTHER DATA STORAGE LOCATIONS BEFORE PROCEEDING TO FURTHER STEPS. 
 
 <p align="center" width="100%">
-<img width="1043" alt="Screen Shot 2022-07-24 at 10 06 11 AM" src="https://user-images.githubusercontent.com/62619033/180650802-ee4289ff-3b17-4637-a855-78abd92ec8da.png">
+<img width="1106" alt="Screen Shot 2022-07-24 at 10 19 36 AM" src="https://user-images.githubusercontent.com/62619033/180651317-7780b7c1-0fac-4552-ac02-c02dae5fbd64.png">
 </p>
 
 ### STEP 2: Access the Great Lakes Server
