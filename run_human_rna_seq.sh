@@ -10,6 +10,8 @@
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --mail-user anishii@umich.edu
 
+cp -r /nfs/turbo/umms-macdouga/reference/mouse_reference .
+cp -r /nfs/turbo/umms-macdouga/reference/human_reference .
 . ./programs/run_fastqc.sh
 . ./programs/run_multiqc.sh
 . ./programs/run_human_star_index.sh
