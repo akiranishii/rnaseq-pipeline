@@ -36,7 +36,7 @@ If any of the above procedures/analyses are required, please contact anishii@umi
 ## How to use the RNA-seq pipeline
 The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary files from GitHub, (2) Preparing input files for the RNA-seq pipeline, (3) Uploading all files onto the Great Lakes Server, and (4) Running the RNA-seq pipeline on the Great Lakes Server. All steps are outlined below. 
 
-### STEP 1: Preparation of input files and download raw sequencing data
+### STEP 1: Prepare input files and download the raw sequencing data
 
 1. In excel, create a file that contains the following columns: (1) Sample, which contains the sample names, and (2) TreatmentX (replace X with a number between 1 and 10), which contains the treatment categorization of each group. There can be multiple treatment columns, but please make sure they are labeled with different numbers. Once made, please save this file as `samples.csv`. An example of this file can be found below: 
 
@@ -50,7 +50,7 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 <img width="1043" alt="Screen Shot 2022-07-24 at 10 06 11 AM" src="https://user-images.githubusercontent.com/62619033/180650802-ee4289ff-3b17-4637-a855-78abd92ec8da.png">
 </p>
 
-### STEP 2: Access the Great Lakes Server (https://arc.umich.edu/greatlakes/user-guide/)
+### STEP 2: Access the Great Lakes Server
 
 1. Install the Cisco VPN client (https://its.umich.edu/enterprise/wifi-networks/vpn) and login using your level 1 password. You may need to fill out a form on the Great Lakes Server website to create an account if you do not have one already (https://arc.umich.edu/greatlakes/user-guide/).
 2. Search “http://ssh uniqname@greatlakes.arc-ts.umich.edu" in the browser.
