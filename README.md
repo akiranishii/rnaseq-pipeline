@@ -34,7 +34,8 @@ The MacLab RNA-seq pipeline was made with the most common use cases of RNA-seq i
 *If any of the above procedures/analyses are required, please contact anishii@umich.edu with necessary product adjustments.*
 
 ## How to use the RNA-seq pipeline
-The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary files from GitHub, (2) Preparing input files for the RNA-seq pipeline, (3) Uploading all files onto the Great Lakes Server, and (4) Running the RNA-seq pipeline on the Great Lakes Server. All steps are outlined below. 
+
+The use of the RNA-seq pipeline requires four steps: (1) preparing input files and downloading the raw sequencing data, (2) accessing the Great Lakes Server via the browser, (3) accessing the Great Lakes Server via the terminal, and (4) running the RNA-seq Pipeline. All steps are outlined below. 
 
 ### STEP 1: Prepare input files and download the raw sequencing data
 
@@ -77,7 +78,7 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 2. Use your level 1 account to login.
 3. Navigate to new directory by typing the command: `cd /nfs/turbo/umms-macdouga/[NEW DIRECTORY NAME]`
 4. Download the necessary reference genome files by using one of the following commands (depending on the animal model of interest):  
-`cp -r ../reference/human_reference .` OR `cp -r ../reference/mouse_reference .`  
+`cp -r ../reference/human_reference .` *or* `cp -r ../reference/mouse_reference .`  
 5. Load the git module onto the Great Lakes Server by using the command: `module load git`
 6. Obtain the necessary programs from the RNA-seq pipeline using the command: `git clone https://github.com/akiranishii/rnaseq-pipeline.git`
 7. Run the following commands in sequence to reorganize the files for the pipeline:  
@@ -85,14 +86,17 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 `rm -r rnaseq-pipeline`  
 
 ### STEP 4: Run the RNA-seq Pipeline
+
 1. Navigate to the correct directory by using the command: `cd /nfs/turbo/umms-macdouga/[NEW DIRECTORY NAME]`
 2. Run the analysis by using one of the following commands (make sure you choose the correct animal model):  
-`sbatch run_human_rna_seq.sh`    OR    `sbatch run_mouse_rna_seq.sh`
+`sbatch run_human_rna_seq.sh` *or* `sbatch run_mouse_rna_seq.sh`
 3. To cancel a run, type the command: `scancel [INSERT SLURM JOB ID HERE]`
 
 *NOTE: By default, email notifications about when the run STARTED, ENDED, and FAILED will be sent to rnaseq.log@gmail.com (password: A.kphqXPzEux-c2CYnoxtt_k). This can be changed in the run_human_rna_seq.sh and run_mouse_rna_seq.sh documents, if desired.*
 
 ## Output files
+
+The RNA-seq pipeline will have three types of output files: (1) Quality control files, (2) Differential expression files, and (3) Pathway analysis files. This section will outline the location and interpretation of output files that will result from running the RNA-seq pipeline. 
 
 ## Post-Pipeline File Cleanup
 
