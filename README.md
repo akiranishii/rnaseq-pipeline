@@ -38,7 +38,7 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 
 1. In excel, create a file that contains the following columns: (1) Sample, which contains the sample names, and (2) TreatmentX (replace X with a number between 1 and 10), which contains the treatment categorization of each group. There can be multiple treatment columns, but please make sure they are labeled with different numbers. Once made, please save this as a .csv file. An example of this file can be found below:  
 
-<img width="195" alt="Screen Shot 2022-07-24 at 9 14 41 AM" src="https://user-images.githubusercontent.com/62619033/180648658-6a71cecc-52fc-428d-8c31-ba8e45896e5b.png">
+                                       <img width="195" alt="Screen Shot 2022-07-24 at 9 14 41 AM" src="https://user-images.githubusercontent.com/62619033/180648658-6a71cecc-52fc-428d-8c31-ba8e45896e5b.png">
 
 
 ### STEP 2: Access the Great Lakes Server (https://arc.umich.edu/greatlakes/user-guide/)
