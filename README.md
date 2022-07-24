@@ -58,10 +58,7 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 4. Click files -> home directory.
 5. Click "GO TO" on the navigation bar, and type the path "/nfs/turbo/umms-macdouga/" into it. Click ok.
 6. Create a new directory for yourself. This directory will be referred to as [NEW DIRECTORY] in later steps.
-7. Create a directory called "clean" inside [NEW DIRECTORY].
-8. 
-
-
+7. Upload the directory labeled "clean" from STEP 1 inside [NEW DIRECTORY].
 
 ### STEP 3: Run RNA-seq analysis through the Great Lakes Server
 
