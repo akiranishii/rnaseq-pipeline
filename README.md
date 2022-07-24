@@ -80,7 +80,7 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 * Images for visualization of directions
 * File prep and github usage steps
 * Detailed explanation of steps
-* Description of output files
+* Description of output files/how to access
 
 ## Helpful links and resources
 
@@ -95,7 +95,6 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 * Salmon: https://salmon.readthedocs.io/en/latest/salmon.html
 * DESeq2: [https://bioconductor.org/packages/devel/bioc/manuals/DESeq2/man/DESeq2.pdf](http://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html)
 * Gene set enrichment analysis (GSEA): https://www.gsea-msigdb.org/gsea/index.jsp
-* Output files and how to view/download results
 
 ## Contact information
 
