@@ -45,10 +45,16 @@ The use of the RNA-seq pipeline requires four steps: (1) preparing input files a
 <img width="195" alt="Screen Shot 2022-07-24 at 9 14 41 AM" src="https://user-images.githubusercontent.com/62619033/180648658-6a71cecc-52fc-428d-8c31-ba8e45896e5b.png">
 </p>
 
-2. Download the raw sequencing data (.fastq.gz format). Place all of your raw RNA-seq files (.fastq.gz) into the directory labeled "clean". Make sure each sample is placed in its own directory with a unique sample name that matches the sample name on the samples.csv file created in step 1 (this is the default file organization when sequencing data is received from BGI). *PLEASE MAKE SURE YOUR FILES ARE BACKED UP IN AN EXTERNAL HARD DRIVE OR OTHER DATA STORAGE LOCATIONS BEFORE PROCEEDING TO FURTHER STEPS.* 
+2. In excel, create another file that contains the following columns: (1) Group, which contains one of the Treatments from step 1, (2)  Control, which contains the control group for the comparison you are interested in conducting for the Treatment specified in the Group column, and (3) Treatment, which contains the treatment group for the comparison you are interested in conducting for the Treatment specified in the Group column. Once made, please save this file as `comparisons.csv`. An example of this file can be found below: 
 
 <p align="center" width="100%">
-<img width="1106" alt="Screen Shot 2022-07-24 at 10 19 36 AM" src="https://user-images.githubusercontent.com/62619033/180651317-7780b7c1-0fac-4552-ac02-c02dae5fbd64.png">
+<img width="349" alt="Screen Shot 2022-07-24 at 5 44 25 PM" src="https://user-images.githubusercontent.com/62619033/180667015-832bb181-1cd7-4d3c-a2be-5d20577dabef.png">
+</p>
+
+3. Download the raw sequencing data (.fastq.gz format). Place all of your raw RNA-seq files (.fastq.gz) into the directory labeled "clean". Make sure each sample is placed in its own directory with a unique sample name that matches the sample name on the samples.csv file created in step 1 (this is the default file organization when sequencing data is received from BGI). *PLEASE MAKE SURE YOUR FILES ARE BACKED UP IN AN EXTERNAL HARD DRIVE OR OTHER DATA STORAGE LOCATIONS BEFORE PROCEEDING TO FURTHER STEPS.* 
+
+<p align="center" width="100%">
+<img width="349" alt="Screen Shot 2022-07-24 at 5 45 33 PM" src="https://user-images.githubusercontent.com/62619033/180667045-22370a55-00a7-4427-9c1e-dc92eee0ffe5.png">
 </p>
 
 ### STEP 1.5 (OPTIONAL): How to download files from AWS on the Great Lakes Server
