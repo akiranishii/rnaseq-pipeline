@@ -77,11 +77,9 @@ The use of the RNA-seq pipeline requires four steps: (1) preparing input files a
 1. Type the following into your terminal: `ssh [REPLACE WITH UNIQNAME]@greatlakes.arc-ts.umich.edu`
 2. Use your level 1 account to login.
 3. Navigate to new directory by typing the command: `cd /nfs/turbo/umms-macdouga/[NEW DIRECTORY NAME]`
-4. Download the necessary reference genome files by using one of the following commands (depending on the animal model of interest):  
-`cp -r ../reference/human_reference .` *or* `cp -r ../reference/mouse_reference .`  
-5. Load the git module onto the Great Lakes Server by using the command: `module load git`
-6. Obtain the necessary programs from the RNA-seq pipeline using the command: `git clone https://github.com/akiranishii/rnaseq-pipeline.git`
-7. Run the following commands in sequence to reorganize the files for the pipeline:  
+4. Load the git module onto the Great Lakes Server by using the command: `module load git`
+5. Obtain the necessary programs from the RNA-seq pipeline using the command: `git clone https://github.com/akiranishii/rnaseq-pipeline.git`
+6. Run the following commands in sequence to reorganize the files for the pipeline:  
 `mv -v rnaseq-pipeline/* .`  
 `rm -r rnaseq-pipeline`  
 
