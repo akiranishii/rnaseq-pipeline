@@ -66,8 +66,8 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 3. It will navigate you to a log in page. Use your level 1 account to access it. 
 4. Click files -> home directory.
 5. Click "GO TO" on the navigation bar, and type the path "/nfs/turbo/umms-macdouga/" into it. Click ok.
-6. Create a new directory for yourself. This directory will be referred to as [NEW DIRECTORY] in later steps.
-7. Upload the directory labeled "clean" and the file labeled "samples.csv" from STEP 1 into [NEW DIRECTORY].
+6. Create a new directory for yourself. This directory will be referred to as [NEW DIRECTORY NAME] in later steps.
+7. Upload the directory labeled "clean" and the file labeled "samples.csv" from STEP 1 into [NEW DIRECTORY NAME].
 
 *NOTE: If you have difficulty with obtaining permissions for any of the steps above, you may need to fill out a form on the Great Lakes Server website to create an account (https://arc.umich.edu/greatlakes/user-guide/).* 
 
@@ -75,7 +75,7 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 
 1. Type the following into your terminal: `ssh [REPLACE WITH UNIQNAME]@greatlakes.arc-ts.umich.edu`
 2. Use your level 1 account to login.
-3. Navigate to new directory by typing the command: `cd /nfs/turbo/umms-macdouga/[NEW DIRECTORY]`
+3. Navigate to new directory by typing the command: `cd /nfs/turbo/umms-macdouga/[NEW DIRECTORY NAME]`
 4. Load the git module onto the Great Lakes Server by using the command: `module load git`
 5. Obtain the necessary programs from the RNA-seq pipeline using the command: `git clone https://github.com/akiranishii/rnaseq-pipeline.git`
 6. Run the following commands in sequence to reorganize the files for the pipeline:  
@@ -92,8 +92,8 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 
 The Great Lakes Server is NOT meant for long-term storage of data files. Therefore, please transfer all files to an external hard drive or other data storage location. Once all files are safely stored at an external location, the files can be removed by using the following commands in sequence:
 
-`cd /nfs/turbo/umms-macdouga/`
-`rm -r [NEW DIRECTORY]`
+`cd /nfs/turbo/umms-macdouga/`  
+`rm -r [NEW DIRECTORY NAME]`
 
 ## Past Publications that use the tools in the RNA-seq pipeline
 
