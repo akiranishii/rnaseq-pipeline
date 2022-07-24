@@ -50,7 +50,7 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 <img width="1106" alt="Screen Shot 2022-07-24 at 10 19 36 AM" src="https://user-images.githubusercontent.com/62619033/180651317-7780b7c1-0fac-4552-ac02-c02dae5fbd64.png">
 </p>
 
-### STEP 2: Access the Great Lakes Server
+### STEP 2: Access the Great Lakes Server via the browser
 
 1. Install the Cisco VPN client (https://its.umich.edu/enterprise/wifi-networks/vpn) and login using your level 1 password.
 2. Search “http://ssh uniqname@greatlakes.arc-ts.umich.edu" in the browser.
@@ -62,7 +62,7 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 
 *NOTE: If you have difficulty with any of the steps above, you may need to fill out a form on the Great Lakes Server website to create an account (https://arc.umich.edu/greatlakes/user-guide/).* 
 
-### STEP 3: Run RNA-seq analysis through the Great Lakes Server
+### STEP 3: Access the Great Lakes Server via the terminal
 
 1. Type the following into your terminal: `ssh [REPLACE WITH UNIQNAME]@greatlakes.arc-ts.umich.edu`
 2. Use your level 1 account to login.
@@ -74,6 +74,8 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 `rm -r rnaseq-pipeline`  
 7. Run the analysis by using the command: `sbatch run_human_rna_seq` or `sbatch run_mouse_rna_seq` (ensure you choose the correct animal model)
 8. To cancel a run, type the command: `scancel [insert Slurm Job ID]`
+
+*NOTE: By default, email notifications about when the run STARTED, ENDED, and FAILED will be sent to rnaseq.log@gmail.com (password: A.kphqXPzEux-c2CYnoxtt_k)*
 
 ### Sections currently being added to the guide
 
