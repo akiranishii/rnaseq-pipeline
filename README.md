@@ -31,7 +31,7 @@ The MacLab RNA-seq pipeline was made with the most common use cases of RNA-seq i
 * Adapters and low quality reads were not removed during the sequencing procedure (The UM Bioinformatics Core and BGI automatically conducts these procedures).
 * The researcher is interested in controlling for batch effects or other variables (e.g. sex, age).
 
-If any of the above procedures/analyses are required, please contact anishii@umich.edu with necessary product adjustments. 
+*If any of the above procedures/analyses are required, please contact anishii@umich.edu with necessary product adjustments.*
 
 ## How to use the RNA-seq pipeline
 The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary files from GitHub, (2) Preparing input files for the RNA-seq pipeline, (3) Uploading all files onto the Great Lakes Server, and (4) Running the RNA-seq pipeline on the Great Lakes Server. All steps are outlined below. 
@@ -44,7 +44,7 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 <img width="195" alt="Screen Shot 2022-07-24 at 9 14 41 AM" src="https://user-images.githubusercontent.com/62619033/180648658-6a71cecc-52fc-428d-8c31-ba8e45896e5b.png">
 </p>
 
-2. Download the raw sequencing data (.fastq.gz format). Place all of your raw RNA-seq files (.fastq.gz) into the directory labeled "clean". Make sure each sample is placed in its own directory with a unique sample name that matches the sample name on the samples.csv file created in step 1 (this is the default file organization when sequencing data is received from BGI). PLEASE MAKE SURE YOUR FILES ARE BACKED UP IN AN EXTERNAL HARD DRIVE OR OTHER DATA STORAGE LOCATIONS BEFORE PROCEEDING TO FURTHER STEPS. 
+2. Download the raw sequencing data (.fastq.gz format). Place all of your raw RNA-seq files (.fastq.gz) into the directory labeled "clean". Make sure each sample is placed in its own directory with a unique sample name that matches the sample name on the samples.csv file created in step 1 (this is the default file organization when sequencing data is received from BGI). *PLEASE MAKE SURE YOUR FILES ARE BACKED UP IN AN EXTERNAL HARD DRIVE OR OTHER DATA STORAGE LOCATIONS BEFORE PROCEEDING TO FURTHER STEPS.* 
 
 <p align="center" width="100%">
 <img width="1106" alt="Screen Shot 2022-07-24 at 10 19 36 AM" src="https://user-images.githubusercontent.com/62619033/180651317-7780b7c1-0fac-4552-ac02-c02dae5fbd64.png">
@@ -60,7 +60,7 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 6. Create a new directory for yourself. This directory will be referred to as [NEW DIRECTORY] in later steps.
 7. Upload the directory labeled "clean" from STEP 1 inside [NEW DIRECTORY].
 
-NOTE: If you have difficulty with any of the steps above, you may need to fill out a form on the Great Lakes Server website to create an account (https://arc.umich.edu/greatlakes/user-guide/).  
+*NOTE: If you have difficulty with any of the steps above, you may need to fill out a form on the Great Lakes Server website to create an account (https://arc.umich.edu/greatlakes/user-guide/).* 
 
 ### STEP 3: Run RNA-seq analysis through the Great Lakes Server
 
