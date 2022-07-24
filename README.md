@@ -36,8 +36,11 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 
 ### STEP 1: Preparation of input files and download raw sequencing data
 
-1. In excel, create a file that contains the following columns: (1) Sample, which contains the sample names, and (2) TreatmentX (replace X with a number between 1 and 10), which contains the treatment categorization of each group. There can be multiple treatment columns, but please make sure they are labeled with different numbers. Once made, please save this as a .csv file. An example of this file can be found below: <img width="195" alt="Screen Shot 2022-07-24 at 9 14 41 AM" src="https://user-images.githubusercontent.com/62619033/180648658-6a71cecc-52fc-428d-8c31-ba8e45896e5b.png">
+1. In excel, create a file that contains the following columns: (1) Sample, which contains the sample names, and (2) TreatmentX (replace X with a number between 1 and 10), which contains the treatment categorization of each group. There can be multiple treatment columns, but please make sure they are labeled with different numbers. Once made, please save this file as `samples.csv`. An example of this file can be found below: 
 
+<img width="195" alt="Screen Shot 2022-07-24 at 9 14 41 AM" src="https://user-images.githubusercontent.com/62619033/180648658-6a71cecc-52fc-428d-8c31-ba8e45896e5b.png">
+
+2. Download the raw sequencing data (.fastq.gz format). Place all of your raw RNA-seq files (.fastq.gz) into the directory labeled "clean". Make sure each sample is placed in its own directory with a unique sample name that matches the sample name on the samples.csv file created in step 1 (this is the default file organization when sequencing data is received from BGI). PLEASE MAKE SURE YOUR FILES ARE BACKED UP IN AN EXTERNAL HARD DRIVE OR OTHER DATA STORAGE LOCATIONS BEFORE PROCEEDING TO FURTHER STEPS. 
 
 ### STEP 2: Access the Great Lakes Server (https://arc.umich.edu/greatlakes/user-guide/)
 
@@ -48,7 +51,9 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 5. Click "GO TO" on the navigation bar, and type the path "/nfs/turbo/umms-macdouga/" into it. Click ok.
 6. Create a new directory for yourself. This directory will be referred to as [NEW DIRECTORY] in later steps.
 7. Create a directory called "clean" inside [NEW DIRECTORY].
-8. Upload all of your raw RNA-seq files (.fastq.gz) into the directory labeled "clean". Make sure each sample is placed in its own directory with a unique sample name that matches the sample name on the .csv file created in STEP 1. 
+8. 
+
+
 
 ### STEP 3: Run RNA-seq analysis through the Great Lakes Server
 
