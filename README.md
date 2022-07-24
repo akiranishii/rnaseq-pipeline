@@ -50,6 +50,13 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 <img width="1106" alt="Screen Shot 2022-07-24 at 10 19 36 AM" src="https://user-images.githubusercontent.com/62619033/180651317-7780b7c1-0fac-4552-ac02-c02dae5fbd64.png">
 </p>
 
+### STEP 1.5 (OPTIONAL): How to download files from AWS on the Great Lakes Server
+
+1. Navigate to the directory you are interested in downloading the files in using the `cd` command
+2. Load the AWS command line interface module by using the command: `module load aws-cli/2`
+3. Response to prompts (BGI should provide you with this information) after using the command: `aws configure` 
+4. Download files of interest into the current directory by using the command: `aws s3 sync s3://[REPLACE WITH BUCKET NAME] .`
+
 ### STEP 2: Access the Great Lakes Server via the browser
 
 1. Install the Cisco VPN client (https://its.umich.edu/enterprise/wifi-networks/vpn) and login using your level 1 password.
