@@ -84,7 +84,7 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 7. Run the following commands in sequence to reorganize the files for the pipeline:  
 `mv -v rnaseq-pipeline/* .`  
 `rm -r rnaseq-pipeline`  
-8. Run the analysis by using the command: `sbatch run_human_rna_seq.sh` or `sbatch run_mouse_rna_seq.sh` (ensure you choose the correct animal model)
+8. Run the analysis by using the command: `sbatch run_human_rna_seq.sh` or `sbatch run_mouse_rna_seq.sh` (make sure you choose the correct animal model)
 9. To cancel a run, type the command: `scancel [insert Slurm Job ID]`
 
 *NOTE: By default, email notifications about when the run STARTED, ENDED, and FAILED will be sent to rnaseq.log@gmail.com (password: A.kphqXPzEux-c2CYnoxtt_k). This can be changed in the run_human_rna_seq.sh and run_mouse_rna_seq.sh documents, if desired.*
