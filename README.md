@@ -52,13 +52,15 @@ The use of the RNA-seq pipeline requires four steps: (1) Obtaining all necessary
 
 ### STEP 2: Access the Great Lakes Server
 
-1. Install the Cisco VPN client (https://its.umich.edu/enterprise/wifi-networks/vpn) and login using your level 1 password. You may need to fill out a form on the Great Lakes Server website to create an account if you do not have one already (https://arc.umich.edu/greatlakes/user-guide/).
+1. Install the Cisco VPN client (https://its.umich.edu/enterprise/wifi-networks/vpn) and login using your level 1 password.
 2. Search “http://ssh uniqname@greatlakes.arc-ts.umich.edu" in the browser.
-3. It will navigate you to a log in page. Use your level 1 account to access it.
+3. It will navigate you to a log in page. Use your level 1 account to access it. 
 4. Click files -> home directory.
 5. Click "GO TO" on the navigation bar, and type the path "/nfs/turbo/umms-macdouga/" into it. Click ok.
 6. Create a new directory for yourself. This directory will be referred to as [NEW DIRECTORY] in later steps.
 7. Upload the directory labeled "clean" from STEP 1 inside [NEW DIRECTORY].
+
+NOTE: If you have difficulty with any of the steps above, you may need to fill out a form on the Great Lakes Server website to create an account (https://arc.umich.edu/greatlakes/user-guide/).  
 
 ### STEP 3: Run RNA-seq analysis through the Great Lakes Server
 
