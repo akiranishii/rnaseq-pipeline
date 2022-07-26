@@ -68,7 +68,7 @@ The use of the RNA-seq pipeline requires four steps: (1) preparing input files a
 
 ### STEP 2: Access the Great Lakes Server via the browser
 
-1. Install the Cisco VPN client (https://its.umich.edu/enterprise/wifi-networks/vpn) and login using your level 1 password.
+1. Install the Cisco VPN client (https://its.umich.edu/enterprise/wifi-networks/vpn) and login using your level 1 password. Use the "UMVPN - Only U-M Traffic" option. 
 2. Search “http://ssh uniqname@greatlakes.arc-ts.umich.edu" in the browser.
 3. It will navigate you to a log in page. Use your level 1 account to access it. 
 4. Click files -> home directory.
@@ -94,7 +94,7 @@ The use of the RNA-seq pipeline requires four steps: (1) preparing input files a
 1. Navigate to the correct directory by using the command: `cd /nfs/turbo/umms-macdouga/[NEW DIRECTORY NAME]`
 2. Run the analysis by using one of the following commands (make sure you choose the correct animal model):  
 `sbatch run_human_rna_seq.sh` *or* `sbatch run_mouse_rna_seq.sh`
-3. You may now exit the terminal. The analysis will take approximately **6 hours** under current settings. To cancel a run at any time, type the command: `scancel [INSERT SLURM JOB ID HERE]`
+3. You may now exit the terminal. The analysis will take approximately **7 hours** under current settings. To cancel a run at any time, type the command: `scancel [INSERT SLURM JOB ID HERE]`
 
 *NOTE: By default, email notifications about when the run STARTED, ENDED, and FAILED will be sent to rnaseq.log@gmail.com (password: A.kphqXPzEux-c2CYnoxtt_k). This can be changed in the run_human_rna_seq.sh and run_mouse_rna_seq.sh documents, if desired.*
 
@@ -104,7 +104,7 @@ The RNA-seq pipeline will have three types of output files: (1) Quality control 
 
 ## Post-Pipeline File Cleanup
 
-The Great Lakes Server is NOT meant for long-term storage of data files. Therefore, please transfer all files to an external hard drive or other data storage location. Once all files are safely stored at an external location, the files can be removed by using the following commands in sequence:
+The Great Lakes Server is NOT meant for long-term storage of data files. Therefore, please transfer all files to an external hard drive or other data storage location (such as the UM Data Den). Once all files are safely stored at an external location, the files can be removed by using the following commands in sequence:
 
 `cd /nfs/turbo/umms-macdouga/`  
 `rm -r [NEW DIRECTORY NAME]`
