@@ -73,8 +73,8 @@ The use of the RNA-seq pipeline requires four steps: (1) preparing input files a
 3. It will navigate you to a log in page. Use your level 1 account to access it. 
 4. Click files -> home directory.
 5. Click "GO TO" on the navigation bar, and type the path "/nfs/turbo/umms-macdouga/" into it. Click ok.
-6. Create a new directory for yourself. This directory will be referred to as [NEW DIRECTORY NAME] in later steps.
-7. Upload the directory labeled `clean` and the files labeled `samples.csv` and `comparisons.csv` from STEP 1 into [NEW DIRECTORY NAME].
+6. Create a new directory for yourself. This directory will be referred to as `[NEW DIRECTORY NAME]` in later steps.
+7. Upload the directory labeled `clean` and the files labeled `samples.csv` and `comparisons.csv` from STEP 1 into `[NEW DIRECTORY NAME]`.
 
 *NOTE: If you have difficulty with obtaining permissions for any of the steps above, you may need to fill out a form on the Great Lakes Server website to create an account (https://arc.umich.edu/greatlakes/user-guide/).* 
 
