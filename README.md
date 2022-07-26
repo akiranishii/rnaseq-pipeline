@@ -45,7 +45,7 @@ The use of the RNA-seq pipeline requires four steps: (1) preparing input files a
 <img width="195" alt="Screen Shot 2022-07-24 at 9 14 41 AM" src="https://user-images.githubusercontent.com/62619033/180648658-6a71cecc-52fc-428d-8c31-ba8e45896e5b.png">
 </p>
 
-2. In excel, create another file that contains the following columns: (1) Group, which contains one of the Treatments from step 1, (2)  Control, which contains the control group for the comparison you are interested in conducting for the Treatment specified in the Group column, and (3) Treatment, which contains the treatment group for the comparison you are interested in conducting for the Treatment specified in the Group column. Once made, please save this file as `comparisons.csv`. An example of this file can be found below: 
+2. In excel, create another file that contains the following columns: (1) Group, which contains one of the Treatments from step 1, (2)  Control, which contains the control group for the comparison you are interested in conducting for the Treatment specified in the Group column, and (3) Treatment, which contains the treatment group for the comparison you are interested in conducting for the Treatment specified in the Group column. Once made, please save this file as `comparisons.csv`. PLEASE MAKE SURE THE `samples.csv` AND `comparisons.csv` FILES ARE CONSISTENT IN WORDING. An example of this file can be found below: 
 
 <p align="center" width="100%">
 <img width="349" alt="Screen Shot 2022-07-24 at 5 45 33 PM" src="https://user-images.githubusercontent.com/62619033/180667045-22370a55-00a7-4427-9c1e-dc92eee0ffe5.png">
