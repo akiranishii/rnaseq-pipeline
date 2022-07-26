@@ -31,7 +31,7 @@ The MacLab RNA-seq pipeline was made with the most common use cases of RNA-seq i
 * Adapters and low quality reads were not removed during the sequencing procedure (The UM Bioinformatics Core and BGI automatically conducts these procedures).
 * The researcher is interested in controlling for batch effects or other variables (e.g. sex, age).
 
-*If any of the above procedures/analyses are required, please contact anishii@umich.edu with necessary product adjustments.*
+*If any of the above procedures/analyses are required, please contact Akira Nishii (anishii@umich.edu), Rebecca Schill (rschill@umich.edu), or Jessica Maung (jmaung@umich.edu) with necessary product adjustments.*
 
 ## How to use the RNA-seq pipeline
 
