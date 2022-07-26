@@ -51,7 +51,7 @@ The use of the RNA-seq pipeline requires four steps: (1) preparing input files a
 <img width="349" alt="Screen Shot 2022-07-24 at 5 45 33 PM" src="https://user-images.githubusercontent.com/62619033/180667045-22370a55-00a7-4427-9c1e-dc92eee0ffe5.png">
 </p>
 
-3. Download the raw sequencing data (.fastq.gz format). Place all of your raw RNA-seq files (.fastq.gz) into the directory labeled "clean". Make sure each sample is placed in its own directory with a unique sample name that matches the sample name on the samples.csv file created in step 1 (this is the default file organization when sequencing data is received from BGI). *PLEASE MAKE SURE YOUR FILES ARE BACKED UP IN AN EXTERNAL HARD DRIVE OR OTHER DATA STORAGE LOCATIONS BEFORE PROCEEDING TO FURTHER STEPS.* 
+3. Download the raw sequencing data (.fastq.gz format). Place all of your raw RNA-seq files (.fastq.gz) into the directory labeled `clean`. Make sure each sample is placed in its own directory with a unique sample name that matches the sample name on the samples.csv file created in step 1 (this is the default file organization when sequencing data is received from BGI). *PLEASE MAKE SURE YOUR FILES ARE BACKED UP IN AN EXTERNAL HARD DRIVE OR OTHER DATA STORAGE LOCATIONS BEFORE PROCEEDING TO FURTHER STEPS.* 
 
 <p align="center" width="100%">
 <img width="1106" alt="Screen Shot 2022-07-24 at 10 19 36 AM" src="https://user-images.githubusercontent.com/62619033/180667095-f8f4f34c-04d9-4bf2-a779-c6183742e318.png">
@@ -74,7 +74,7 @@ The use of the RNA-seq pipeline requires four steps: (1) preparing input files a
 4. Click files -> home directory.
 5. Click "GO TO" on the navigation bar, and type the path "/nfs/turbo/umms-macdouga/" into it. Click ok.
 6. Create a new directory for yourself. This directory will be referred to as [NEW DIRECTORY NAME] in later steps.
-7. Upload the directory labeled "clean" and the file labeled "samples.csv" from STEP 1 into [NEW DIRECTORY NAME].
+7. Upload the directory labeled `clean` and the files labeled `samples.csv` and `comparisons.csv` from STEP 1 into [NEW DIRECTORY NAME].
 
 *NOTE: If you have difficulty with obtaining permissions for any of the steps above, you may need to fill out a form on the Great Lakes Server website to create an account (https://arc.umich.edu/greatlakes/user-guide/).* 
 
