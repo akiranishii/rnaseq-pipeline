@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name run_human_rna_seq
+#SBATCH --job-name run_mouse_rna_seq
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
@@ -14,7 +14,7 @@ cp -r /nfs/turbo/umms-macdouga/reference/mouse_reference .
 cp -r /nfs/turbo/umms-macdouga/reference/human_reference .
 . ./programs/run_fastqc.sh
 . ./programs/run_multiqc.sh
-. ./programs/run_human_star_index.sh
-. ./programs/run_human_star.sh
+. ./programs/run_mouse_star_index.sh
+. ./programs/run_mouse_star.sh
 . ./programs/run_multiqc_post_alignment.sh
-. ./programs/run_human_deseq2.sh
+. ./programs/run_mouse_deseq2.sh
