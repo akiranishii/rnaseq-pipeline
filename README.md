@@ -111,16 +111,30 @@ All resulting files from the RNA-seq pipeline will be located in a folder called
 There are three types of figures in the "Figures_STAR" and "Figures_Salmon" subfolders. (1) Quality control files, (2) Differential expression files, and (3) Pathway analysis files. This section will outline the location and interpretation of output files that will result from running the RNA-seq pipeline. 
 
 1. Quality control files are located in a subfolder called "QualityControl". The folder contains the following figures for each comparison:
-* Dispersion plot
+
+* Dispersion plot  
+
+<p align="center" width="100%">
 <img width="662" alt="Screen Shot 2022-08-22 at 4 58 23 PM" src="https://user-images.githubusercontent.com/62619033/186018514-f0baa967-ee3f-4a6a-9dc6-5cae13952955.png">
+ </p>
+ 
 * Heatmap
+
 <img width="787" alt="Screen Shot 2022-08-22 at 4 59 17 PM" src="https://user-images.githubusercontent.com/62619033/186018550-ebda172a-7899-474f-941d-b4148447785f.png">
+
+
 * Library size
-![library_size_Treatment1_Control_Knockout](https://user-images.githubusercontent.com/62619033/186018613-ee3a9f53-0022-444a-ad46-cdd6d05be059.png)
+
+<img width="549" alt="Screen Shot 2022-08-22 at 5 04 55 PM" src="https://user-images.githubusercontent.com/62619033/186019127-f31bbc2f-c709-4e3c-89e7-a80302e8edd0.png">
+
 * PCA plot
+
 <img width="602" alt="Screen Shot 2022-08-22 at 4 59 44 PM" src="https://user-images.githubusercontent.com/62619033/186018638-261808b6-f7e0-4130-849f-eae6e2c83054.png">
+
 * MA plot
-![Treatment1_Knockout_vs_Control_MA_plot](https://user-images.githubusercontent.com/62619033/186018677-76ec4410-f108-4f3c-8d50-5e533c398ba8.png)
+
+<img width="434" alt="Screen Shot 2022-08-22 at 5 05 06 PM" src="https://user-images.githubusercontent.com/62619033/186019170-4b4a89fe-b6b8-41cf-b32f-b3e4244e3c15.png">
+
 
 
 2. Differential expression files are located in a subfolder called "OutputTables." The folder contains the following data for each comparison:
