@@ -1,4 +1,4 @@
-# MacLab End-to-End RNA-Seq Pipeline (Last updated: 07/24/2022)
+# MacLab End-to-End RNA-Seq Pipeline (Last updated: 08/22/2022)
 
 ## Introduction
 
