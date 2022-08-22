@@ -168,7 +168,7 @@ There are three types of figures in the "Figures_STAR" and "Figures_Salmon" subf
 <img width="820" alt="Screen Shot 2022-08-22 at 5 01 07 PM" src="https://user-images.githubusercontent.com/62619033/186020253-577b3af2-17d0-4ad9-978e-e329e603ca9e.png">
 </p>
 
-* MA plot (interact)
+* MA plot HTML (use this version of the MA plot to see which points correspond to which genes)
 
 <p align="center" width="100%">
 <img width="1432" alt="Screen Shot 2022-08-22 at 5 15 54 PM" src="https://user-images.githubusercontent.com/62619033/186020543-b43af33b-a910-4e5e-9cd9-ddfb4ad818f3.png">
