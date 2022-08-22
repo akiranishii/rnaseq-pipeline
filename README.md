@@ -176,8 +176,9 @@ There are three types of figures in the "Figures_STAR" and "Figures_Salmon" subf
 
 
 3. The Pathway analysis files will be located in a subfolder called "PathwayAnalysis." The folder contains the following data for each comparison:
-* `.rnk` file used as input for Gene Set Enrichment Analysis
-* GSEA folders for 
+* `.rnk` file used as input for Gene Set Enrichment Analysis (GSEA)
+* GSEA output folders (analysis conducted for 'Hallmark gene set,' 'Curated gene set,' and 'Regulatory target gene set'). More information on GSEA and available gene sets can be accessed here: http://www.gsea-msigdb.org/gsea/msigdb/index.jsp
+
 
 ## Post-Pipeline File Cleanup
 
