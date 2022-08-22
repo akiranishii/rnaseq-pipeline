@@ -106,7 +106,27 @@ The use of the RNA-seq pipeline requires four steps: (1) preparing input files a
 
 ## Output files
 
-The RNA-seq pipeline will have three types of output files: (1) Quality control files, (2) Differential expression files, and (3) Pathway analysis files. This section will outline the location and interpretation of output files that will result from running the RNA-seq pipeline. 
+All resulting files from the RNA-seq pipeline will be located in a folder called "Output." The "Output" folder will contain three subfolders called "Figures_STAR," "Figures_Salmon," and "Cross_Validation." Each subfolder will contain additional subfolders for each comparison specified for the analysis. "Figures_STAR" will contain all figures generated using the regular alignment procedure, whereas the "Figures_Salmon" will contain all figures generated using the pseudoalignment procedure. The "Cross Validation" file will contain all figures generated for the purpose of cross-checking the results from regular alignment and pseudoalignment.  
+
+There are three types of figures in the "Figures_STAR" and "Figures_Salmon" subfolders. (1) Quality control files, (2) Differential expression files, and (3) Pathway analysis files. This section will outline the location and interpretation of output files that will result from running the RNA-seq pipeline. 
+
+1. Quality control files are located in a subfolder called "QualityControl". The folder contains the following figures for each comparison:
+* Dispersion plot
+* Heatmap
+* Library size
+* PCA plot
+* MA plot
+
+2. Differential expression files are located in a subfolder called "OutputTables." The folder contains the following data for each comparison:
+* Differential expression results in a .csv file format
+* Depth normalized counts table
+* rlog normalized counts table
+* raw counts table
+* MA plot (interact)
+
+3. The Pathway analysis files will be located in a subfolder called "PathwayAnalysis." The folder contains the following data for each comparison:
+* .rnk file used as input for Gene Set Enrichment Analysis
+* GSEA folders for 
 
 ## Post-Pipeline File Cleanup
 
