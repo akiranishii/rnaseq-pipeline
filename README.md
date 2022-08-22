@@ -120,22 +120,27 @@ There are three types of figures in the "Figures_STAR" and "Figures_Salmon" subf
  
 * Heatmap
 
+<p align="center" width="100%">
 <img width="787" alt="Screen Shot 2022-08-22 at 4 59 17 PM" src="https://user-images.githubusercontent.com/62619033/186018550-ebda172a-7899-474f-941d-b4148447785f.png">
-
+ </p>
 
 * Library size
 
+<p align="center" width="100%">
 <img width="549" alt="Screen Shot 2022-08-22 at 5 04 55 PM" src="https://user-images.githubusercontent.com/62619033/186019127-f31bbc2f-c709-4e3c-89e7-a80302e8edd0.png">
-
+ </p>
+ 
 * PCA plot
 
+<p align="center" width="100%">
 <img width="602" alt="Screen Shot 2022-08-22 at 4 59 44 PM" src="https://user-images.githubusercontent.com/62619033/186018638-261808b6-f7e0-4130-849f-eae6e2c83054.png">
-
+ </p>
+ 
 * MA plot
 
+<p align="center" width="100%">
 <img width="434" alt="Screen Shot 2022-08-22 at 5 05 06 PM" src="https://user-images.githubusercontent.com/62619033/186019170-4b4a89fe-b6b8-41cf-b32f-b3e4244e3c15.png">
-
-
+ </p>
 
 2. Differential expression files are located in a subfolder called "OutputTables." The folder contains the following data for each comparison:
 * Differential expression results in a .csv file format
