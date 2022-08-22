@@ -143,14 +143,40 @@ There are three types of figures in the "Figures_STAR" and "Figures_Salmon" subf
  </p>
 
 2. Differential expression files are located in a subfolder called "OutputTables." The folder contains the following data for each comparison:
+
 * Differential expression results in a .csv file format
+
+<p align="center" width="100%">
+<img width="939" alt="Screen Shot 2022-08-22 at 5 02 00 PM" src="https://user-images.githubusercontent.com/62619033/186020334-faf1dddf-6175-485f-bc60-b275faaa1f69.png">
+</p>
+ 
 * Depth normalized counts table
+
+ <p align="center" width="100%">
+<img width="1067" alt="Screen Shot 2022-08-22 at 5 00 48 PM" src="https://user-images.githubusercontent.com/62619033/186020234-82583278-1ef7-4884-b991-194b54eac77a.png">
+</p>
+
 * rlog normalized counts table
+  
+<p align="center" width="100%">
+<img width="862" alt="Screen Shot 2022-08-22 at 5 01 27 PM" src="https://user-images.githubusercontent.com/62619033/186020270-2329a918-06a3-4c17-bfa9-b95c209ddacf.png">
+</p>
+
 * raw counts table
+ 
+<p align="center" width="100%">
+<img width="820" alt="Screen Shot 2022-08-22 at 5 01 07 PM" src="https://user-images.githubusercontent.com/62619033/186020253-577b3af2-17d0-4ad9-978e-e329e603ca9e.png">
+</p>
+
 * MA plot (interact)
 
+<p align="center" width="100%">
+<img width="1432" alt="Screen Shot 2022-08-22 at 5 15 54 PM" src="https://user-images.githubusercontent.com/62619033/186020543-b43af33b-a910-4e5e-9cd9-ddfb4ad818f3.png">
+</p>
+
+
 3. The Pathway analysis files will be located in a subfolder called "PathwayAnalysis." The folder contains the following data for each comparison:
-* .rnk file used as input for Gene Set Enrichment Analysis
+* `.rnk` file used as input for Gene Set Enrichment Analysis
 * GSEA folders for 
 
 ## Post-Pipeline File Cleanup
