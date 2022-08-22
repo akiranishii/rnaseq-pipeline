@@ -180,6 +180,10 @@ There are three types of figures in the "Figures_STAR" and "Figures_Salmon" subf
 * `.rnk` file used as input for Gene Set Enrichment Analysis (GSEA)
 * GSEA output folders (analysis conducted for 'Hallmark gene set,' 'Curated gene set,' and 'Regulatory target gene set'). More information on GSEA and available gene sets can be accessed here: http://www.gsea-msigdb.org/gsea/msigdb/index.jsp
 
+## Recommended: Long-term File Storage on the Data Den
+
+The Data Den is an archive optimized for data that is not regularly accessed for extended periods of time (weeks to years). 
+
 
 ## Post-Pipeline File Cleanup
 
