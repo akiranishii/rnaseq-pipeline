@@ -112,10 +112,16 @@ There are three types of figures in the "Figures_STAR" and "Figures_Salmon" subf
 
 1. Quality control files are located in a subfolder called "QualityControl". The folder contains the following figures for each comparison:
 * Dispersion plot
+<img width="662" alt="Screen Shot 2022-08-22 at 4 58 23 PM" src="https://user-images.githubusercontent.com/62619033/186018514-f0baa967-ee3f-4a6a-9dc6-5cae13952955.png">
 * Heatmap
+<img width="787" alt="Screen Shot 2022-08-22 at 4 59 17 PM" src="https://user-images.githubusercontent.com/62619033/186018550-ebda172a-7899-474f-941d-b4148447785f.png">
 * Library size
+![library_size_Treatment1_Control_Knockout](https://user-images.githubusercontent.com/62619033/186018613-ee3a9f53-0022-444a-ad46-cdd6d05be059.png)
 * PCA plot
+<img width="602" alt="Screen Shot 2022-08-22 at 4 59 44 PM" src="https://user-images.githubusercontent.com/62619033/186018638-261808b6-f7e0-4130-849f-eae6e2c83054.png">
 * MA plot
+![Treatment1_Knockout_vs_Control_MA_plot](https://user-images.githubusercontent.com/62619033/186018677-76ec4410-f108-4f3c-8d50-5e533c398ba8.png)
+
 
 2. Differential expression files are located in a subfolder called "OutputTables." The folder contains the following data for each comparison:
 * Differential expression results in a .csv file format
