@@ -57,6 +57,10 @@ The use of the RNA-seq pipeline requires four steps: (1) preparing input files a
 <img width="1106" alt="Screen Shot 2022-07-24 at 10 19 36 AM" src="https://user-images.githubusercontent.com/62619033/180667095-f8f4f34c-04d9-4bf2-a779-c6183742e318.png">
 </p>
 
+4. Optional (for complex comparisons). For comparisons that require subsetting of data by more than two or more treatment groups, provide a third file saved as 'exclusions.csv.' In this file, please provide the following columns: (1) A group column, which is identical to the group column in the 'comparisons.csv' file and (2) seperate columns for treatment groups you would like to subset the data by. Once made, please provide information on which variables you would like to exclude from your data before making your comparisons. For example, for the second comparison 
+ 
+An example of this file can be found below: 
+
 ### STEP 1.5 (OPTIONAL): How to download files from AWS on the Great Lakes Server
 
 1. Navigate to the directory you are interested in downloading the files in using the `cd` command
