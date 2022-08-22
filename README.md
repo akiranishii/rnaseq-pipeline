@@ -110,7 +110,7 @@ All resulting files from the RNA-seq pipeline will be located in a folder called
 
 There are three types of figures in the "Figures_STAR" and "Figures_Salmon" subfolders. (1) Quality control files, (2) Differential expression files, and (3) Pathway analysis files. This section will outline the location and interpretation of output files that will result from running the RNA-seq pipeline. 
 
-1. Quality control files are located in a subfolder called "QualityControl". The folder contains the following figures for each comparison:
+**1. Quality control files are located in a subfolder called "QualityControl". The folder contains the following figures for each comparison:**
 
 * Dispersion plot  
 
@@ -142,7 +142,7 @@ There are three types of figures in the "Figures_STAR" and "Figures_Salmon" subf
 <img width="434" alt="Screen Shot 2022-08-22 at 5 05 06 PM" src="https://user-images.githubusercontent.com/62619033/186019170-4b4a89fe-b6b8-41cf-b32f-b3e4244e3c15.png">
  </p>
 
-2. Differential expression files are located in a subfolder called "OutputTables." The folder contains the following data for each comparison:
+**2. Differential expression files are located in a subfolder called "OutputTables." The folder contains the following data for each comparison:**
 
 * Differential expression results in a .csv file format
 
@@ -175,7 +175,8 @@ There are three types of figures in the "Figures_STAR" and "Figures_Salmon" subf
 </p>
 
 
-3. The Pathway analysis files will be located in a subfolder called "PathwayAnalysis." The folder contains the following data for each comparison:
+**3. The Pathway analysis files will be located in a subfolder called "PathwayAnalysis." The folder contains the following data for each comparison:**
+
 * `.rnk` file used as input for Gene Set Enrichment Analysis (GSEA)
 * GSEA output folders (analysis conducted for 'Hallmark gene set,' 'Curated gene set,' and 'Regulatory target gene set'). More information on GSEA and available gene sets can be accessed here: http://www.gsea-msigdb.org/gsea/msigdb/index.jsp
 
