@@ -182,7 +182,22 @@ There are three types of figures in the "Figures_STAR" and "Figures_Salmon" subf
 
 ## Recommended: Long-term File Storage on the Data Den
 
-The Data Den is an archive optimized for data that is not regularly accessed for extended periods of time (weeks to years). 
+The Data Den is an archive optimized for data that is not regularly accessed for extended periods of time (weeks to years). Once you are done running the RNA-seq pipeline, it is recommended that you store all raw data files on the Data Den. Several steps must be taken in order to transfer files from the Great Lakes Server to the Data Den.
+
+1. Ask your PI to email arc-support@umich.edu to update the Data Den access list by providing your name and uniqname.
+2. Create an user account on the Flux Transfer Service using this link: https://arc.umich.edu/login-request
+3. Nagivate to: https://www.globus.org/
+4. Login using your umich email
+5. Select middle panel in the top right corner of the screen. This should open up two windows on the right and left side of the screen. See image below. 
+
+<img width="229" alt="Screen Shot 2022-08-22 at 7 30 58 PM" src="https://user-images.githubusercontent.com/62619033/186037443-efe45c18-e1fb-41a0-8f93-32a026a23753.png">
+
+6. On the right side of the screen, type `umich#greatlakes` in the "Collection" box. Type `/nfs/turbo/umms-macdouga/` in the "Path" box.
+7. On the left side of the screen, type `umich#flux` in the "Collection" box. Type `/nfs/dataden/umms-macdouga/` in the "Path" box.
+8. Select the folder you are interested in moving from the Great Lakes Server to the Data Den on the left side of the screen by checking the square box next to the folder. 
+9. Click on the blue "start" button to transfer the folder from the Great Lakers Server to the Data Den.
+
+<img width="1111" alt="Screen Shot 2022-08-22 at 7 11 07 PM" src="https://user-images.githubusercontent.com/62619033/186038023-4ce686d1-226c-4550-ac6f-ac7714106af1.png">
 
 
 ## Post-Pipeline File Cleanup
