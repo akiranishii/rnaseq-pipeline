@@ -21,11 +21,6 @@ The RNA-seq pipeline conducts three analyses in parallel. The first analysis use
 <img width="956" alt="rnaseq" src="https://user-images.githubusercontent.com/62619033/186000990-233c89aa-5029-4a54-8942-2fc633405dbb.png">
 </p>
 
-
-
-<img width="823" alt="rnaseq" src="https://user-images.githubusercontent.com/62619033/179835069-b15add0e-0777-460c-a817-dff6d835d4be.png">
-
-
 ## Limitations of the RNA-seq pipeline
 
 The MacLab RNA-seq pipeline was made with the most common use cases of RNA-seq in the MacDougald lab in mind. Therefore, the pipeline will not be able to conduct analyses in the following situations:
