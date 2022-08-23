@@ -15,7 +15,7 @@ Most sequencing data in the MacDougald lab are derived from Illumina and the Bei
 
 ## RNA-seq pipeline outline
 
-The RNA-seq pipeline conducts two analyses in parallel. The first analysis uses STAR (v2.7.5a) for both the alignment and quantification procedures. The second procedure uses Salmon (v0.11.30) for pseudoalignment. The result from the two analyses are compared after differential expression analysis is conducted. A more detailed outline of the RNA-seq pipeline can be viewed in the image below. The versions of each program used for the analysis are: FASTQC (v
+The RNA-seq pipeline conducts two analyses in parallel. The first analysis uses STAR (v2.7.5a) for both the alignment and quantification procedures. The second procedure uses Salmon (v0.11.30) for pseudoalignment. The result from the two analyses are compared after differential expression analysis is conducted. A more detailed outline of the RNA-seq pipeline can be viewed in the image below. The versions of each program used for the analysis are: FASTQC (v0.11.8), STAR (v2.7.5a), python (v3.9.7), Salmon (v0.11.30), and Cutadapt (v1.18).
 
 <p align="center" width="100%">
 <img width="956" alt="rnaseq" src="https://user-images.githubusercontent.com/62619033/186000990-233c89aa-5029-4a54-8942-2fc633405dbb.png">
