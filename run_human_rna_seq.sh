@@ -8,7 +8,7 @@
 #SBATCH --account macdouga99
 #SBATCH --partition=largemem
 #SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --mail-user anishii@umich.edu
+#SBATCH --mail-user log.rnaseq@gmail.com
 
 cp -r /nfs/turbo/umms-macdouga/reference/mouse_reference .
 cp -r /nfs/turbo/umms-macdouga/reference/human_reference .
