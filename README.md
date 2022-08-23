@@ -63,12 +63,30 @@ The use of the RNA-seq pipeline requires four steps: (1) preparing input files a
 <img width="717" alt="optional" src="https://user-images.githubusercontent.com/62619033/186008525-b497bbab-0593-4245-8fd2-5dbf49b27541.png">
 </p>
 
-### STEP 1.5 (OPTIONAL): How to download files from AWS on the Great Lakes Server
+### STEP 1.5a (OPTIONAL): How to transfer files from AWS to the Great Lakes Server
 
 1. Navigate to the directory you are interested in downloading the files in using the `cd` command
 2. Load the AWS command line interface module by using the command: `module load aws-cli/2`
 3. Response to prompts (BGI should provide you with this information) after using the command: `aws configure` 
 4. Download files of interest into the current directory by using the command: `aws s3 sync s3://[REPLACE WITH BUCKET NAME] .`
+
+*NOTE: If you use this option, please make sure the files and folders are labeled and organized correctly, as described in STEP 1.*
+
+### STEP 1.5b (OPTIONAL): How to transfer files from a personal computer to the Great Lakes Server using Globus
+
+1. Download globus personal connect from this link and complete setup: https://www.globus.org/globus-connect-personal
+2. Nagivate to: https://www.globus.org/
+3. Login using your umich email
+4. Select middle panel in the top right corner of the screen. This should open up two windows on the right and left side of the screen. See image below. 
+
+<img width="229" alt="Screen Shot 2022-08-22 at 7 30 58 PM" src="https://user-images.githubusercontent.com/62619033/186037443-efe45c18-e1fb-41a0-8f93-32a026a23753.png">
+
+5. On the left side of the screen, select your local collection, then select navigate to the folder you are interested in transferring from your personal computer. 
+6. On the right side of the screen, type `umich#greatlakes` in the "Collection" box. Type `/nfs/turbo/umms-macdouga/` in the "Path" box.
+7. Select the folder you are interested in moving from your personal computer to the Great Lakes Server on the left side of the screen by checking the square box next to the folder. 
+8. Click on the blue "start" button to transfer the folder from your personal computer to the Great Lakers Server. 
+
+<img width="1108" alt="Screen Shot 2022-08-22 at 8 30 17 PM" src="https://user-images.githubusercontent.com/62619033/186044003-9dd7817b-db4b-481a-bc6d-bff2d11c014d.png">
 
 *NOTE: If you use this option, please make sure the files and folders are labeled and organized correctly, as described in STEP 1.*
 
@@ -197,7 +215,6 @@ The Data Den is an archive optimized for data that is not regularly accessed for
 9. Click on the blue "start" button to transfer the folder from the Great Lakers Server to the Data Den. 
 
 <img width="1111" alt="Screen Shot 2022-08-22 at 7 11 07 PM" src="https://user-images.githubusercontent.com/62619033/186038023-4ce686d1-226c-4550-ac6f-ac7714106af1.png">
-
 
 ## Post-Pipeline File Cleanup
 
