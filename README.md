@@ -120,7 +120,7 @@ The use of the RNA-seq pipeline requires four steps: (1) preparing input files a
 `sbatch run_human_rna_seq.sh` *or* `sbatch run_mouse_rna_seq.sh`
 3. You may now exit the terminal. The analysis will take approximately **7 hours** for around 10 samples under current settings. To cancel a run at any time, type the command: `scancel [INSERT SLURM JOB ID HERE]`
 
-*NOTE: By default, email notifications about when the run STARTED, ENDED, and FAILED will be sent to rnaseq.log@gmail.com (password: A.kphqXPzEux-c2CYnoxtt_k). This can be changed in the run_human_rna_seq.sh and run_mouse_rna_seq.sh documents, if desired.*
+*NOTE: By default, email notifications about when the run STARTED, ENDED, and FAILED will be sent to log.rnaseq@gmail.com. This can be changed in the run_human_rna_seq.sh and run_mouse_rna_seq.sh documents, if desired.*
 
 ## First-level Quality Control after running RNA-seq Pipeline
 
