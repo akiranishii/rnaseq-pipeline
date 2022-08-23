@@ -60,7 +60,7 @@ The use of the RNA-seq pipeline requires four steps: (1) preparing input files a
 4. **Optional (for complex comparisons).** For comparisons that require subsetting of data by more than two or more treatment groups, provide a third file saved as `exclusions.csv`. In this file, please provide the following columns: (1) A group column, which is identical to the group column in the `comparisons.csv` file and (2) seperate columns for treatment groups you would like to subset the data by. Once made, please provide information on which variables you would like to exclude from your data before making your comparisons. For example, for the second comparison in the `comparisons.csv` file (Treatment1 B vs C), if you are actually only interested in comparing B vs C among samples who are classified as 'ab' in Treatment 2, you would need to exclude the samples that are labeled 'up'. Therefore, the second row (for the second comparison) and the column labeled "Treatment2" of the `exclusions.csv` file will contain the word 'up'. This translates to "Compare B vs C in Treatment1 after excluding 'up' in the data set". An alternative translation would be, "Compare B vs C for 'ab' only." An example of this file can be found below: 
 
 <p align="center" width="100%">
-<img width="717" alt="optional" src="https://user-images.githubusercontent.com/62619033/186008525-b497bbab-0593-4245-8fd2-5dbf49b27541.png">
+<img width="908" alt="Screen Shot 2022-08-23 at 3 16 02 PM" src="https://user-images.githubusercontent.com/62619033/186246682-2830180c-ad71-4785-9615-d42751a1467b.png">
 </p>
 
 ### STEP 1.5a (OPTIONAL): How to transfer files from AWS to the Great Lakes Server
