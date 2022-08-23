@@ -136,7 +136,7 @@ All resulting files from the RNA-seq pipeline will be located in a folder called
 
 There are three types of figures in the "Figures_STAR" and "Figures_Salmon" subfolders. (1) Quality control files, (2) Differential expression files, and (3) Pathway analysis files. This section will outline the location and interpretation of output files that will result from running the RNA-seq pipeline. 
 
-**1. Quality control files are located in a subfolder called "QualityControl". The folder contains the following figures for each comparison:**
+1. Quality control files are located in a subfolder called "QualityControl". The folder contains the following figures for each comparison:
 
 * Dispersion plot  
 
