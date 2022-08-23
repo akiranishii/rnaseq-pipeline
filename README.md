@@ -15,7 +15,7 @@ Most sequencing data in the MacDougald lab are derived from Illumina and the Bei
 
 ## RNA-seq pipeline outline
 
-The RNA-seq pipeline conducts three analyses in parallel. The first analysis uses STAR (v2.7.5a) for both the alignment and quantification procedures. The second analysis uses STAR (v2.7.5a) for alignment, then FeatureCounts for quantification. The final procedures uses Salmon (v0.11.30) for pseudoalignment. The result from the three analyses are compared after differential expression analysis is conducted. A more detailed outline of the RNA-seq pipeline can be viewed in the image below. 
+The RNA-seq pipeline conducts two analyses in parallel. The first analysis uses STAR (v2.7.5a) for both the alignment and quantification procedures. The second procedure uses Salmon (v0.11.30) for pseudoalignment. The result from the two analyses are compared after differential expression analysis is conducted. A more detailed outline of the RNA-seq pipeline can be viewed in the image below. The versions of each program used for the analysis are: FASTQC (v
 
 <p align="center" width="100%">
 <img width="956" alt="rnaseq" src="https://user-images.githubusercontent.com/62619033/186000990-233c89aa-5029-4a54-8942-2fc633405dbb.png">
@@ -174,7 +174,6 @@ There are three types of figures in the "Figures_STAR" and "Figures_Salmon" subf
 <img width="1432" alt="Screen Shot 2022-08-22 at 5 15 54 PM" src="https://user-images.githubusercontent.com/62619033/186020543-b43af33b-a910-4e5e-9cd9-ddfb4ad818f3.png">
 </p>
 
-
 **3. The Pathway analysis files will be located in a subfolder called "PathwayAnalysis." The folder contains the following data for each comparison:**
 
 * `.rnk` file used as input for Gene Set Enrichment Analysis (GSEA)
@@ -195,7 +194,7 @@ The Data Den is an archive optimized for data that is not regularly accessed for
 6. On the right side of the screen, type `umich#greatlakes` in the "Collection" box. Type `/nfs/turbo/umms-macdouga/` in the "Path" box.
 7. On the left side of the screen, type `umich#flux` in the "Collection" box. Type `/nfs/dataden/umms-macdouga/` in the "Path" box.
 8. Select the folder you are interested in moving from the Great Lakes Server to the Data Den on the left side of the screen by checking the square box next to the folder. 
-9. Click on the blue "start" button to transfer the folder from the Great Lakers Server to the Data Den.
+9. Click on the blue "start" button to transfer the folder from the Great Lakers Server to the Data Den. 
 
 <img width="1111" alt="Screen Shot 2022-08-22 at 7 11 07 PM" src="https://user-images.githubusercontent.com/62619033/186038023-4ce686d1-226c-4550-ac6f-ac7714106af1.png">
 
