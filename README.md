@@ -267,26 +267,8 @@ That command line script accepts the following arguments:
   
 So if you needed 8 cores and 200GB you could find out the per minute cost like this:  
   
-`$ my_job_estimate -c 8 -m 200gb -p standard -t 00:01:00`
---------------------------------------------------  
-Job Detail Summary:  
---------------------------------------------------  
+`my_job_estimate -c 8 -m 200gb -p standard -t 00:01:00`
   
-Partition: standard  
-Total Nodes: 1  
-Total Cores: 8  
-Total Memory: 204800.0MB  
-  
-Walltime: 0 day(s)  
-00 hour(s)  
-01 minute(s)  
-00 second(s)  
-  
---------------------------------------------------  
-Cost Estimate:  
---------------------------------------------------  
-Total: $0.01 for 0.016666666666666666 hours.  
-
 NOTE: This price estimate assumes your job runs  
 for the full walltime. Cost is subject to change.  
   
