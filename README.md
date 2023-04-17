@@ -1,4 +1,4 @@
-# MacLab End-to-End RNA-Seq Pipeline (Last updated: 08/23/2022)
+# MacLab End-to-End RNA-Seq Pipeline (Last updated: 04/17/2023)
 
 ## Introduction
 
@@ -248,6 +248,48 @@ The Great Lakes Server is NOT meant for long-term storage of data files. Therefo
 `cd /nfs/turbo/umms-macdouga/`  
 `rm -r [NEW DIRECTORY NAME]`
 
+## Estimating cost of run on Great Lakes Server
+
+There is a 1 to 7 ratio for cost on Great Lakes. If you use 2 cores and 7GB it would be the same as using 1 core and 14GB. However, while the rates are shown on the page copied it does not included all information that goes into the calculation for a job. Much of it depends on the partition used and the ratio of the resources. For your resource example you cold take the 200GB and divide by 7 and round up the answer. This would give you 29 and then multiply it by the rate per minute for the standard partition. This would give you $0.0123016.  
+  
+There is an easier way to calculate this though. We have also created a script that allows users to get an estimate of the cost of a job before it gets submitted:  
+
+`my_job_estimate`  
+  
+That command line script accepts the following arguments:  
+  
+-c , --cores Total required cores for job. (Default: 1)  
+-g , --gpus Total required gpus for job. (Default: 0)   
+-n , --nodes Total required nodes for job. (Default: 1)  
+-m , --memory Total required memory for job. (Default: 768mb)  
+-p , --partition Partition being submitted to. (Default: standard)  
+-t , --time Total required time for job. (Default: 01:00:00)  
+  
+So if you needed 8 cores and 200GB you could find out the per minute cost like this:  
+  
+`$ my_job_estimate -c 8 -m 200gb -p standard -t 00:01:00`
+--------------------------------------------------  
+Job Detail Summary:  
+--------------------------------------------------  
+  
+Partition: standard  
+Total Nodes: 1  
+Total Cores: 8  
+Total Memory: 204800.0MB  
+  
+Walltime: 0 day(s)  
+00 hour(s)  
+01 minute(s)  
+00 second(s)  
+  
+--------------------------------------------------  
+Cost Estimate:  
+--------------------------------------------------  
+Total: $0.01 for 0.016666666666666666 hours.  
+
+NOTE: This price estimate assumes your job runs  
+for the full walltime. Cost is subject to change.  
+  
 ## Past Publications that use the tools in the RNA-seq pipeline
 
 * https://pubmed.ncbi.nlm.nih.gov/34774798/
